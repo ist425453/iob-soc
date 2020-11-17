@@ -12,7 +12,7 @@ int max_value= 0; // guarda o valor max
   //init uart 
   uart_init(UART_BASE,FREQ/BAUD); 
     
-    for (i = 0; i <= 100; ++i) {
+    for (i = 0; i <= 10; ++i) {
         value = rand();
 	uart_printf("Valor: %d\n", value);
 	if (value > max_value){
